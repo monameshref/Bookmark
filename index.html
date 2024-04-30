@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="shortcut icon" href="images/bookmark.png" type="image/x-icon">
+        <!-- fontawesome-->
+        <link rel="stylesheet" href="css/all.min.css">
+
+        <!-- bootstrap css-->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <!-- style main css -->
+        <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    
+    <div class="crud p-3 p-sm-3">
+
+        <h1 class="waviy" title="bookmark">
+            <span style="--i: 1">B</span>
+            <span style="--i: 2">O</span>
+            <span style="--i: 3">O</span>
+            <span style="--i: 4">K</span>
+            <span style="--i: 5">M</span>
+            <span style="--i: 6">A</span>
+            <span style="--i: 7">R</span>
+            <span style="--i: 8">K</span>
+            <span style="--i: 9">E</span>
+            <span style="--i: 10">R</span>
+          </h1>
+
+        <div class="container  ">
+            <div class="form ">
+                
+                <div class="row justify-content-center">
+                    
+                    <div class=" col-12 col-sm-12 col-lg-8   cont rounded-4 my-5 px-3 px-sm-5 py-3 ">
+
+                        <div>
+                            <h2 class="text-center py-2 fs-2 mb-5">Bookmark your favorite sites..</h2>
+                        </div>
+
+                        <div class="fw-bold fs-6">
+                            <i class="fa-solid fa-file-signature pe-2"></i>
+                            <label for="siteNameInput">Site Name</label><br />
+                            <input oninput = "validationName()" class=" form-control my-3" type="text" id="siteNameInput" placeholder="Bookmark Name">
+                        </div>
+
+                        <div class="fw-bold fs-6">
+                            <i class="fa-solid fa-link pe-2"></i>
+                            <label for="siteUrlInput">Site URL</label><br />
+                            <input oninput=" validationUrl()" class=" form-control my-3" type="text" id="siteUrlInput" placeholder="Website URL">
+                        </div>
+
+                        <div class="d-flex submitCont">
+                            <button onclick="addSite()" class=" my-4 submitBtn">Submit</button>
+                            <input id="searchInput" oninput="serchSite()"class=" form-control my-4 mx-4" type="search" placeholder="search By Name...">
+                        </div>
+                    </div>
+
+
+                    <div class=" col-12 col-sm-12 col-lg-8 ">
+                        <div>
+                            <table class="table text-center rounded-5">
+                                <thead>
+                                    <tr>
+                                        <th>index</th>
+                                        <th>Website Name</th>
+                                        <th>Visit</th>
+                                        <th>Delete</th>
+            
+                                    </tr>
+                                </thead>
+            
+                                <tbody id="tableBody"></tbody>
+            
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- aleart js -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- main js -->
+    <script src="js/index.js"></script>
+
+</body>
+</html>

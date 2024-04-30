@@ -1,0 +1,186 @@
+
+body{
+    min-height: 100vh;
+    background-color: #3A3845;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #eb9780;
+}
+
+
+h2#swal2-title {
+    background-color: #634890;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+}
+
+div#swal2-html-container {
+    color: #000;
+    text-align: start;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.swal2-popup.swal2-modal.swal2-show {
+    padding: 0;
+}
+
+button.swal2-confirm.swal2-styled {
+    margin-block: 15px;
+}
+
+/* Start main title styling */
+.waviy {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.103));
+    font-size: 2.125rem;
+    text-align: center;
+    letter-spacing: 3px;}
+
+.waviy span {
+    position: relative;
+    display: inline-block;
+    animation: waviy 1s infinite;
+    animation-delay: calc(0.1s * var(--i));
+    transition: animation 300ms;
+}
+
+h1 span:first-child {
+    font-size: 4.375rem;
+}
+
+@keyframes waviy {
+    0%,
+    40%,
+    100% {
+        transform: translateY(0);
+}
+20% {
+        transform: translateY(-15px);
+    }
+}
+
+.waviy:hover span {
+    animation: none;
+}
+/* End main title styling */
+
+::selection {
+    background-color: #fff;
+    color: #eb9780;
+}
+
+/* .crud > h1 {
+    font-size: 3.125rem;
+    letter-spacing: .9375rem;
+} */
+
+h2 {
+    letter-spacing: .0938rem;
+}
+
+.crud {
+    margin: 1.25rem;
+}
+
+.cont {
+    box-shadow: 0px 0px 5px 3px #f1f1f161;
+    width: 43.75rem;
+}
+
+input.form-control {
+    border: 2px solid #eb9780;
+    outline: none;
+    background-color: #F0ECE5;
+}
+
+
+input.form-control:focus {
+    box-shadow: 0px 0px 3px 2px #795548;
+    border: 2px solid #eb9780;
+}
+
+
+.submitBtn {
+    width: 9rem;
+    border-radius: 30rem;
+    font-size: .9375rem;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0px 0px 5px #ffffff;
+    /* background-color: #F0ECE5; */
+}
+
+.submitBtn::before {
+    content: '';
+    width: 0;
+    height: 3rem;
+    border-radius: 30rem;
+    position: absolute;
+    top: 0;
+    left: -5px;
+    background-image: linear-gradient(to right, #3A3845 0%, #826F66 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.submitBtn:hover::before {
+    width: 9rem;
+}
+
+.submitBtn:hover {
+    color: #fff;
+}
+
+.btn-2 {
+    border: 1px solid #634890 ;
+    color: #634890;
+    transition: .5s;
+}
+
+.btn-2:hover {
+    color: #fff;
+    background-color: #634890;
+}
+
+.table thead th {
+    background-color: #634890 !important;
+    color: #fff !important;
+    letter-spacing: 1.7px;
+    padding: 10px 0;
+}
+
+
+.table tbody td  {
+    color: #634890;
+}
+
+
+@media (max-width:567px) {
+
+    #searchInput {
+        display: none;
+    }
+
+    .submitCont {
+        justify-content: center;
+    }
+
+    .submitBtn {
+        height: 2.5rem;
+    }
+
+}
+
+@media (max-width:510px) {
+
+    html {
+        font-size: 10px;
+    }
+
+}
